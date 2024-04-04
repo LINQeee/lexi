@@ -1,0 +1,61 @@
+.confirmPopup {
+  position: absolute;
+  width: 260px;
+  height: 250px;
+  left: calc(50vw - 260px / 2);
+  top: calc(50vh - 260px / 2);
+  background: var(--popup-background);
+  backdrop-filter: var(--popup-filter);
+  padding: 20px 20px 0 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+.confirmPopup h1 {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+}
+
+.confirmPopup span {
+  font-size: 11px !important;
+  color: var(--secondary-text) !important;
+}
+
+.confirmPopup div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 8%;
+  height: 25px;
+}
+
+.confirmPopup button:first-child {
+  background-color: var(--cancel-item-color);
+  color: black;
+}
+
+.confirmPopup button:last-child {
+  background-color: var(--confirm-item-color);
+  color: var(--text);
+}
+
+.confirmPopup button:hover {
+  filter: brightness(120%);
+}
+
+.confirmPopup button {
+  font-size: 13px;
+  background-image: var(--button-gradient);
+  width: 47%;
+  border-radius: 3px;
+  height: 100%;
+  transition: all 0.15s ease;
+  font-weight: 500;
+}

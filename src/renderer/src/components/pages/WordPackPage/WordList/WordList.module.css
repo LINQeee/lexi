@@ -1,0 +1,75 @@
+.wordList {
+  align-self: center;
+  list-style: none;
+  width: 100%;
+  background: var(--sidebar-background);
+  border-radius: 8px;
+}
+
+.wordList > li > span {
+  width: 48%;
+  display: inline-block;
+}
+
+.wordList > li {
+  padding: 10px;
+  width: 100%;
+}
+
+.wordList > li > button {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  color: var(--text);
+  transition: all 0.15s ease;
+  opacity: 0.4;
+}
+
+.wordList > li:not(li:last-of-type) {
+  border-bottom: 1px solid var(--secondary-text);
+}
+
+.wordList > li:first-child {
+  background-color: var(--popup-background);
+  border-radius: 8px 8px 0 0;
+}
+
+.wordList > li:first-child:nth-last-child(1) {
+  position: relative;
+}
+
+.wordList > li:first-child:nth-last-child(1)::after {
+  content: 'This list is empty, add some stuff in it)';
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  background: var(--sidebar-background);
+  border-radius: 0 0 8px 8px;
+  color: var(--secondary-text);
+}
+
+.favoritesButton {
+  right: 15px;
+  opacity: 1 !important;
+}
+
+.favoritesButton svg {
+  fill: var(--text);
+}
+
+.favoritesButton.active {
+  opacity: 1;
+}
+
+.favoritesButton.active svg {
+  fill: var(--confirm-item-color);
+  filter: brightness(140%);
+  transition: all 0.15s ease;
+}
+
+.favoritesButton:hover {
+  opacity: 0.7 !important;
+}

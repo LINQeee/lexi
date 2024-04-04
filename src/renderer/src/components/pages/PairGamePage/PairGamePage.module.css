@@ -1,0 +1,49 @@
+.pairGame {
+  width: calc(100% - 5vw);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: center;
+  align-items: center;
+}
+
+.pairGame h3 {
+  font-size: 25px;
+  font-weight: 300;
+  color: var(--text);
+}
+
+.pairGame span {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--text);
+}
+
+.pairGame ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.pairGame li {
+  width: 100%;
+  background: var(--sidebar-background);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pairGame li:hover {
+  background: var(--popup-background);
+}
+
+.correct {
+  background: rgba(69, 254, 69, 0.3) !important;
+}
+
+.wrong {
+  background: rgba(255, 61, 61, 0.3) !important;
+}

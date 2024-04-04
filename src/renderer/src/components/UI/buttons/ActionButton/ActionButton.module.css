@@ -1,0 +1,18 @@
+@import '@/assets/variables.css';
+
+.actionButton {
+  width: 35px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid var(--half-transparent-white);
+  border-radius: 5px;
+  color: var(--secondary-text);
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionButton:hover {
+  border-color: var(--secondary-text);
+}

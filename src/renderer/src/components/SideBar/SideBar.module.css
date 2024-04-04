@@ -1,0 +1,27 @@
+@import '@/assets/variables.css';
+
+.sideBar {
+  background-color: var(--sidebar-background);
+  width: 25vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 8px;
+  padding-top: 50px;
+  gap: 10px;
+  transition: all 0.15s ease;
+  max-width: 250px;
+  min-width: 140px;
+}
+
+.list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: auto;
+}

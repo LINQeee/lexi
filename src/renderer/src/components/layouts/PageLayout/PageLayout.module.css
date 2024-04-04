@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 75vw;
+  position: absolute;
+  right: 0;
+  padding: 30px;
+  overflow: auto;
+  gap: 30px;
+}
+
+.page h1 {
+  font-weight: 300;
+  font-size: 20px;
+  align-self: center;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@media (min-width: 1000px) {
+  .page {
+    width: calc(100vw - 250px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: calc(100vw - 140px) !important;
+  }
+}

@@ -1,0 +1,19 @@
+.item-enter {
+  opacity: 0;
+  transform: translateY(-200%);
+}
+.item-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.15s ease-in;
+}
+.item-exit {
+  z-index: 100;
+  transform: translateY(0) translateX(0);
+  opacity: 1;
+}
+.item-exit-active {
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}

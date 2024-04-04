@@ -1,0 +1,92 @@
+.wordInput {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  height: 100%;
+  gap: 5px;
+  position: relative;
+}
+
+.wordInput span {
+  height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.wordInput input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid var(--half-transparent-white);
+  border-radius: 4px;
+  color: var(--text);
+  padding: 5px;
+  padding-top: 3px;
+  font-weight: 300;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.wordInput:has(input:focus) .suggestions {
+  opacity: 1;
+  z-index: 2;
+}
+
+.wordInput input:not(:disabled):hover,
+.wordInput input:focus,
+.wordInput input:valid {
+  border-color: var(--secondary-text);
+}
+
+.suggestions {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: var(--main-background);
+  backdrop-filter: var(--popup-filter);
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+  overflow-y: auto;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+
+.suggestions:active {
+  z-index: 2;
+}
+
+.suggestions li {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.suggestions li:hover {
+  background: var(--popup-background);
+}
+
+.clearButton {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 28px;
+  height: 28px;
+  color: var(--text);
+  transition: all 0.15s ease;
+}
+
+.clearButton i {
+  scale: 1.3;
+}
+
+.clearButton:hover {
+  opacity: 0.7;
+}

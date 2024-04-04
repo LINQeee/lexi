@@ -1,0 +1,59 @@
+.results {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.results svg {
+  stroke-dashoffset: inherit;
+}
+
+.results svg circle {
+  stroke-dashoffset: inherit;
+  transition: stroke-dashoffset 1s linear;
+  stroke: #666;
+  stroke-width: 1em;
+}
+.results svg circle:last-of-type {
+  stroke: #98ff9c;
+}
+.results > div {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 2em auto;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.35);
+}
+
+.results > div:after {
+  position: absolute;
+  display: block;
+  height: 160px;
+  width: 160px;
+  left: 50%;
+  top: 50%;
+  content: attr(data-correct-count) '/20';
+  margin-top: -80px;
+  margin-left: -80px;
+  border-radius: 100%;
+  line-height: 160px;
+  font-size: 2em;
+  text-shadow: 0 0 0.5em rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.35);
+}
+
+.results button {
+  width: 250px;
+  height: 25px;
+  background-image: var(--button-gradient);
+  background-color: var(--confirm-item-color);
+  color: var(--text);
+  border-radius: 5px;
+}

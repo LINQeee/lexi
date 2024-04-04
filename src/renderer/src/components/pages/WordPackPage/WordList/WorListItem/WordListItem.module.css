@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.deleteButton {
+  position: absolute;
+  right: 5px;
+}
+
+.deleteButton i {
+  scale: 1.3;
+}
+
+.item > button:hover {
+  opacity: 1;
+}
+
+.item > div {
+  right: 33px;
+  position: absolute;
+}
+
+.item + div {
+  position: fixed;
+  left: calc(50%);
+  top: calc(50% - 250px / 2);
+}
+
+.item + div button {
+  width: 48.5%;
+}

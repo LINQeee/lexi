@@ -1,0 +1,17 @@
+:root {
+  --main-background: rgba(28, 28, 28, 0.8);
+  --main-background-not-transparent: rgb(30, 30, 30);
+  --half-transparent-white: rgb(109, 109, 109);
+  --sidebar-background: rgba(255, 255, 255, 0.1);
+  --sidebar-background-not-transparent: rgb(92, 92, 92);
+  --secondary-text: #e4e4e4;
+  --text: #f1f1f1;
+  --card-hover: rgba(255, 255, 255, 0.15);
+  --card-active: rgba(255, 255, 255, 0.35);
+  --popup-background: rgba(91, 91, 91, 0.7);
+  --popup-filter: blur(14px);
+  --confirm-item-color: #007aff;
+  --cancel-item-color: rgb(169, 169, 169);
+  --button-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+  --scrollbar-color: rgba(211, 211, 211, 0.7);
+}

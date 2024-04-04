@@ -1,0 +1,89 @@
+.select {
+  width: 32px;
+  height: 20px;
+  background: var(--main-background);
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.select i {
+  transition: all 0.15s ease;
+}
+
+.opened i {
+  rotate: 180deg;
+}
+
+.select ul {
+  z-index: 1;
+}
+
+.select:hover {
+  border-color: var(--secondary-text);
+}
+
+.select:has(li:hover) {
+  border-color: transparent;
+}
+
+.select i {
+  position: absolute;
+  right: 3px;
+  scale: 0.7;
+}
+
+.select > div {
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 7px;
+}
+
+.select ul {
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  width: max-content;
+  width: 100px;
+}
+
+.select li span {
+  font-size: 14px;
+}
+
+.select li > div {
+  width: 6px;
+  border-radius: 100%;
+  height: 6px;
+}
+
+.select li {
+  background: var(--main-background-not-transparent);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px;
+  transition: all 0.2s ease;
+  width: 100%;
+  word-break: break-all;
+}
+
+.select li:hover {
+  background: var(--sidebar-background-not-transparent);
+}
+
+.select li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.select li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

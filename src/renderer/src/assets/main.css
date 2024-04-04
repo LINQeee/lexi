@@ -1,0 +1,17 @@
+@import './base.css';
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-background);
+}

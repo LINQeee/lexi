@@ -1,0 +1,13 @@
+.actionBox {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
